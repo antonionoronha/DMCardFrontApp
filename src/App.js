@@ -11,7 +11,6 @@ class App extends Component{
 
   async componentDidMount(){
     const response = await api.get('http://localhost:5000/solicitations/');
-    //console.log(response.data);
 
     this.setState({ solicitations: response.data })
   }
